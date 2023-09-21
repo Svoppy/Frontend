@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST Movies</title>
+    <link rel="stylesheet" type="text/css" href="vava.css">
+    <style>
+        /* Your existing styles go here */
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="avav.html">Home</a></li>
+                <li><a href="avav2.html">Page 2</a></li>
+            </ul>
+        </nav>
+        <h1>Here is my list of BEST Movies</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="grid-item">
+                <h2>Schindler's list</h2>
+                <audio controls>
+                    <source src="your-audio-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mxphAlJID9U&pp=ygUYc2NoaW5kbGVyJ3MgbGlzdCB0cmFpbGVy" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="grid-item">
+                <h2>The Shawshank Redemption</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6hB3S9bIaco&pp=ygUcc2hhd3NoYW5rIHJlZGVtcHRpb24gdHJhaWxlcg%3D%3D" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="grid-item">
+                <h2>Forrest Gump</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=bLvqoHBptjg&pp=ygUUZm9ycmVzdCBndW1wIHRyYWlsZXI%3D" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="grid-item">
+                <h2>The Dark Knight</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=EXeTwQWrcwY&pp=ygUTZGFyayBrbmlnaHQgdHJhaWxlcg%3D%3D" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <section>
+            <h4>You can write your own list of best movies</h4>
+            <p>We'd love to hear your opinion:</p>
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <hr>
+    </main>
+</body>
+</html>
