@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST Movies</title>
+    <link rel="stylesheet" type="text/css" href="vava.css">
+    <style>
+        /* Your existing styles go here */
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="avav.html">Home</a></li>
+                <li><a href="avav2.html">Page 2</a></li>
+            </ul>
+        </nav>
+        <h1>Here is my list of BEST Movies</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="grid-item">
+                <h2>Schindler's list</h2>
+                <img src="https://www.themoviedb.org/t/p/original/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" height="600" width="400" alt="Schindler's List" class="image">
+                <p class="description">Schindler's List recreates the true story of Oskar Schindler, the Czech-born southern German industrialist who risked his life to save over 1,100 of his Jewish factory workers from the death camps in Nazi-occupied Poland.</p>
+            </div>
+
+            <div class="grid-item">
+                <h2>The Shawshank Redemption</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" height="600" width="400" alt="The Shawshank Redemption" class="image">
+                <p class="description">Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.</p>
+            </div>
+
+            <div class="grid-item">
+                <h2>Forrest Gump</h2>
+                <img src="https://flxt.tmsimg.com/assets/p15829_v_v13_aa.jpg" height="600" width="400" alt="Forrest Gump" class="image">
+                <p class="description">The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.</p>
+            </div>
+
+            <div class="grid-item">
+                <h2>The Dark Knight</h2>
+                <img src="https://m.media-amazon.com/images/I/91KkWf50SoL._AC_UF894,1000_QL80_.jpg" height="600" width="400" alt="The Dark Knight" class="image">
+                <p class="description">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+            </div>
+        </div>
+
+        <section>
+            <h4>You can write your own list of best movies</h4>
+            <p>We'd love to hear your opinion:</p>
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <hr>
+    </main>
+</body>
+</html>
